@@ -196,18 +196,6 @@ body {
 	line-height: 1.85em;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
-
-	// Stops initial animations until page loads.
-	&.is-preload {
-
-		*,
-		*:before,
-		*:after {
-			@include vendor('animation', 'none !important');
-			@include vendor('transition', 'none !important');
-		}
-	}
-
 }
 
 input,
@@ -923,14 +911,6 @@ body.homepage {
 			opacity: 0;
 			@include vendor('transition', 'opacity 2.5s ease-in-out');
 			@include vendor('transition-delay', '0.5s');
-		}
-	}
-
-	&.is-preload {
-		#header {
-			&:after {
-				opacity: 1;
-			}
 		}
 	}
 }

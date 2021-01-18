@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #09090a;
+  font-family: "Poppins", sans-serif;
+}
+
+
+.container {
+  margin: 20px 40px;
+  color: white;
+}
+
+.heading {
+  font-size: 60px;
+  color: white;
+}
+
+.heading span {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+.profile {
+  flex-basis: 260px;
+}
+
+.profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.profile:hover .profile-img {
+  filter: grayscale(0);
+}
+
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #ccc;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
+
+
+
+/* Footer */
+
+#footer {
+position: relative;
+overflow: hidden;
+padding: 4em 0 4em 0;
+background: #2b252c;
+color: #fff;
+}
+
+#footer .icon.circled {
+background: #fff;
+color: #c2bbc4;
+}
+
+#footer header {
+text-align: center;
+cursor: default;
+}
+
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6 {
+color: #fff;
+}
+
+#footer .contact {
+text-align: center;
+}
+
+#footer .contact p {
+text-align: center;
+margin: 0 0 1.5em 0;
+}
+
+#footer .copyright {
+text-align: center;
+color: rgba(128, 128, 128, 0.75);
+font-size: 0.8em;
+cursor: default;
+}
+
+#footer .copyright a {
+color: rgba(128, 128, 128, 0.75);
+}
+
+#footer .copyright a:hover {
+color: rgba(212, 212, 212, 0.85);
+}
+ul.icons {
+  position: relative;
+  background: rgba(128, 128, 128, 0.05);
+  border-radius: 4em;
+  display: inline-block;
+  padding: 0.35em 0.75em 0.35em 0.75em;
+  font-size: 1.2em;
+  cursor: default;
+  list-style: none;
+}
+
+ul.icons li {
+  display: inline-block;
+  padding-left: 0;
+}
+
+ul.icons li a {
+  display: inline-block;
+  background: none;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  text-align: center;
+  border-radius: 100%;
+  border: 0;
+  color: inherit;
+}
+
+ul.icons li a:hover {
+  color: #ef8376;
+}

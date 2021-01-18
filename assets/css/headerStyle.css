@@ -1,3 +1,12 @@
+#head{
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("/assets/img/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
 .logo {
     width: 200px;
     height: auto;
@@ -41,6 +50,7 @@
 
 .nav-tabs .nav-item {
     margin-bottom: -0.125rem;
+    
 }
 
 .nav-tabs .nav-link {
@@ -67,11 +77,6 @@
     border-color: #dee2e6 #dee2e6 #fff;
 }
 
-.nav-tabs .dropdown-menu {
-    margin-top: -0.125rem;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
 
 .nav-pills .nav-link {
     border-radius: 0.5rem;
@@ -153,11 +158,6 @@
     padding-left: 0;
 }
 
-.navbar-nav .dropdown-menu {
-    position: static;
-    float: none;
-}
-
 .navbar-text {
     display: inline-block;
     padding-top: 0.5rem;
@@ -217,9 +217,6 @@
         flex-direction: row;
     }
 
-    .navbar-expand-sm .navbar-nav .dropdown-menu {
-        position: absolute;
-    }
 
     .navbar-expand-sm .navbar-nav .nav-link {
         padding-right: 0.5rem;
@@ -266,10 +263,6 @@
 
     .navbar-expand-md .navbar-nav {
         flex-direction: row;
-    }
-
-    .navbar-expand-md .navbar-nav .dropdown-menu {
-        position: absolute;
     }
 
     .navbar-expand-md .navbar-nav .nav-link {
@@ -319,9 +312,6 @@
         flex-direction: row;
     }
 
-    .navbar-expand-lg .navbar-nav .dropdown-menu {
-        position: absolute;
-    }
 
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 0.5rem;
@@ -370,10 +360,6 @@
         flex-direction: row;
     }
 
-    .navbar-expand-xl .navbar-nav .dropdown-menu {
-        position: absolute;
-    }
-
     .navbar-expand-xl .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
@@ -417,9 +403,6 @@
     flex-direction: row;
 }
 
-.navbar-expand .navbar-nav .dropdown-menu {
-    position: absolute;
-}
 
 .navbar-expand .navbar-nav .nav-link {
     padding-right: 0.5rem;
@@ -545,3 +528,87 @@
 .navbar-dark .navbar-text a:focus {
     color: #fff;
 }
+
+
+/* Footer */
+
+#footer {
+	position: relative;
+	overflow: hidden;
+	padding: 4em 0 4em 0;
+	background: #2b252c;
+	color: #fff;
+}
+
+#footer .icon.circled {
+	background: #fff;
+	color: #2b252c;
+}
+
+#footer header {
+	text-align: center;
+	cursor: default;
+}
+
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer h6 {
+	color: #fff;
+}
+
+#footer .contact {
+	text-align: center;
+}
+
+#footer .contact p {
+	text-align: center;
+	margin: 0 0 1.5em 0;
+}
+
+#footer .copyright {
+	text-align: center;
+	color: rgba(128, 128, 128, 0.75);
+	font-size: 0.8em;
+	cursor: default;
+}
+
+#footer .copyright a {
+	color: rgba(128, 128, 128, 0.75);
+}
+
+#footer .copyright a:hover {
+	color: rgba(212, 212, 212, 0.85);
+}
+ul.icons {
+    position: relative;
+    background: rgba(128, 128, 128, 0.05);
+    border-radius: 4em;
+    display: inline-block;
+    padding: 0.35em 0.75em 0.35em 0.75em;
+    font-size: 1.2em;
+    cursor: default;
+    list-style: none;
+  }
+  
+  ul.icons li {
+    display: inline-block;
+    padding-left: 0;
+  }
+  
+  ul.icons li a {
+    display: inline-block;
+    background: none;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: center;
+    border-radius: 100%;
+    border: 0;
+    color: inherit;
+  }
+  
+  ul.icons li a:hover {
+    color: #ef8376;
+  }
