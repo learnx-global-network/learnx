@@ -1,0 +1,106 @@
+body {min-height: 120vh;}
+header {
+    margin-bottom: 3rem;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+header p {
+    max-width: 50ch;
+    margin: 3rem auto 0;
+}
+.podcast,
+.podcast--reverse {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.podcast + .podcast, .podcast--reverse + .podcast--reverse,
+.podcast + .podcast--reverse, .podcast--reverse + .podcast {margin-top: 5rem;}
+.podcast--reverse {flex-direction: row-reverse;}
+.podcast > *, .podcast--reverse > * {padding: 1rem;}
+.podcast__content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50ch;
+    order: 1;
+    max-width: 60ch;
+    min-width: 40ch;
+}
+.podcast__title {
+    font-size: 1.5rem;
+    color: var(--blue);
+    position: relative;
+    margin-left: .4em;
+}
+.podcast__title::before {
+    content: '';
+    position: absolute;
+    top: .25em;
+    bottom: .15em;
+    left: -.4em;
+    width: .2em;
+    background-color: var(--yellow);
+}
+.podcast__subtitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #888;
+}
+.podcast__desc {
+    margin-top: 1rem;
+}
+.podcast__timestamps {
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+.podcast__timestamps li::marker {color: var(--yellow);}
+.podcast__timestamps li + li {margin-top: .2rem;}
+.podcast__timestamps button {
+    border: 0;
+    background: unset;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Merriweather", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    cursor: pointer;
+    color: var(--blue);
+    text-align: left;
+    white-space: normal;
+    word-wrap: normal;
+    overflow-wrap: normal;
+    max-width: calc(100vw - 1.5rem - 2rem);
+}
+.podcast__timestamps button::after {
+    content: ' - play';
+    color: #999;
+    font-weight: 400;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    opacity: 0;
+    transition: opacity .2s ease-in, clip-path .2s ease-out;
+}
+.podcast__timestamps button[data-time]::after {content: ' ' attr(data-time);}
+.podcast__timestamps button:hover::after, .podcast__timestamps button:focus::after {
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.podcast__timestamps button:focus {outline: none;}
+.podcast__video {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50ch;
+    order: 2;
+    max-width: 60ch;
+}
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.aspect-ratio > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}

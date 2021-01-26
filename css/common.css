@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700&display=swap');
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --yellow: #daaa00;
+    --yellow-rgb: 218, 170, 0;
+    --dark-yellow: #a17e00;
+    --dark-yellow-rgb: 161, 126, 0;
+    --blue: #2c3b49;
+    --blue-rgb: 44, 59, 73;
+}
+::selection {
+    color: white;
+    background-color: var(--yellow);
+}
+body {
+    font-family: "Merriweather", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    overflow-x: hidden;
+}
+.water {
+    position: fixed;
+    bottom: 0;
+    right: 4rem;
+    z-index: -10;
+    font-size: 18rem;
+    line-height: 14rem;
+    font-weight: 600;
+    color: rgba(0,0,0,.032);
+    user-select: none;
+}
+@media screen and (max-width: 800px) {
+    .water {
+        transform-origin: right bottom;
+        transform: rotate(-90deg) translateX(50%);
+        right: .5rem;
+        right: clamp(0rem, calc(3vw - 2rem), 4rem);
+    }
+}
+.brand {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    transform: translateY(-100%) rotate(-90deg);
+    transform-origin: bottom right;
+    width: 110px;
+}
+@media screen and (max-width: 530px){.brand {display: none;}}
+.striped-title {
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+    color: white;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    font-size: clamp(2rem, 7vw, 2.75rem);
+}
+.striped-title::before {
+    content: '';
+    position: absolute;
+    top: -.1em;
+    bottom: -.15em;
+    left: -.8em;
+    right: -.4em;
+    z-index: -1;
+    transform: skewY(2deg);
+    animation: stripe-clipping .6s ease-out both;
+    background-color: rgba(var(--yellow-rgb), .7);
+}
+.striped-title::after {
+    content: '';
+    position: absolute;
+    top: -.1em;
+    bottom: -.15em;
+    left: -.4em;
+    right: -.8em;
+    z-index: -2;
+    transform: skewY(-4deg);
+    animation: stripe-clipping .6s .1s ease-out both;
+    background-color: rgba(0,0,0, .7);
+}
+@keyframes stripe-clipping {
+    0% {clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);}
+    100% {clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+}
+footer {
+    padding: 4rem;
+    background-color: #333333;
+    margin-top: 12rem;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+footer h2 {color: white;}
+ul.socials {
+    margin: 1.5rem auto;
+    width: fit-content;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-items: center;
+    align-items: center;
+}
+ul.socials li {
+    height: fit-content;
+    margin: .5rem;
+    transition: color .2s ease;
+    filter: brightness(120%);
+}
+ul.socials li:hover {color: var(--yellow);}
+ul.socials a {text-decoration: none; color: inherit;}
+ul.socials svg {width: 2rem;}
