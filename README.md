@@ -1,5 +1,7 @@
 # LearnX global network site prototype, by Fedesky25
-See the [preview](https://fedesky25.github.io/learnx-site-prototype/). Features:
+This is the official repository of the LearnX Global Network website: here's its [preview](https://learnx-global-network.github.io/learnx/).  
+The original repository and prototype are [here](https://github.com/Fedesky25/LearnX-site-prototype), made by [Fedesky25](https://github.com/Fedesky25).  
+Features:
 * All html files in same folder
 * All js, css, images in their respective folders
 * No dependencies, so no external library that need more HTTP requests and several hundread KB download (with the exception of leaflet required to rendere a map of all universities involved)
@@ -29,4 +31,4 @@ There are two layout options for the page:
 * `alt_intervies.html`: the alternative layout is lighter, keeps aligned and centered in "fullscreen" (via a subtle snapping effect) video and podcast info, leaving much more space for the description and, more importantly, the list of useful timestamps. While it works best on wide screens, on the downside it isn't much responsive and requires a different solution to adapt to the mobile viewport.
 
 ## Feedback
-Tell me what you think about it.
+Tell me what you think about it. 
