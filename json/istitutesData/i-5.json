@@ -1,0 +1,44 @@
+[
+    {
+        "student": {
+            "name": "Divi Mishra",
+            "from": "unknown",
+            "class": 2020,
+            "title": "Major",
+            "subject": "Computer Science"
+        },
+        "desc": "Divi Mishra, Bachelor of Science, is going to share about her 4 years' experience of majoring in Computer Science and minoring in Business. Also, she will shed light on her study experience in the Pittsburgh campus of CMU, which was covered by the Qatar Foundation",
+        "videoID": "EWP_UW3dgMQ",
+        "timestamps": []
+    },
+    {
+        "student": {
+            "name": "Yusufbek",
+            "from": "Uzbekistan",
+            "class": 2023,
+            "title": "Bachelor degree",
+            "subject": "Science in Business Administration"
+        },
+        "desc": "Yusufbek will guide through every step of the Application Process and tell about his experience of applying to CMU Qatar as a Central Asian student from Uzbekistan.",
+        "videoID": "pZS16Ps7iJY",
+        "timestamps": []
+    },
+    {
+        "student": {
+            "name": "Aigerim",
+            "from": "Kazakistan",
+            "class": 2023,
+            "title": "Bachelor degree",
+            "subject": "Science in Information Systems"
+        },
+        "desc": "Aigerim explains the difference between Computer Science and Information Systems academic majors at Carnegie Mellon University in Qatar. Aigerim sheds light on what are the key characteristics of your CMU-Q Supplemental Essay.",
+        "videoID": "GUT9CU6Oa9Y",
+        "timestamps": [
+            {"time": 110, "label": "High school experience"},
+            {"time": 306, "label": "Why did you apply to IS?"},
+            {"time": 505, "label": "Project orientation"},
+            {"time": 866, "label": "Bussiness and CS merging"},
+            {"time": 1064, "label": "Qatar culture"}
+        ]
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "student": {
+            "name": "Mahran",
+            "from": "Syria",
+            "class": 2023,
+            "title": "Academic Major",
+            "subject": "Computer Science"
+        },
+        "desc": "",
+        "videoID": "MyxmWmgUuOE",
+        "timestamps": []
+    },
+    {
+        "student": {
+            "name": "Quentin",
+            "from": "Singapore",
+            "class": 2023,
+            "title": "Academic Major",
+            "subject": "Economics"
+        },
+        "desc": "",
+        "videoID": "U47t1eCbWuE",
+        "timestamps": []
+    },
+    {
+        "student": {
+            "name": "Rachel",
+            "from": "China",
+            "class": 2024,
+            "title": "Academic Major",
+            "subject": "Social Sciences"
+        },
+        "desc": "",
+        "videoID": "V9HiB1gzSeE",
+        "timestamps": [
+            {"time": 840, "label": "Amherst College Supplemental Essay"},
+            {"time": 1680, "label": "In-depth discussion on mastering CommonApp Essay + Extra-curricular activities incorporated in the Essay"},
+            {"time": 2978, "label": "Academic & test scores (GPA, SAT, SAT Subject tests, etc.)"},
+            {"time": 3780, "label": "What Amherst College values the most in an application"},
+            {"time": 3960, "label": "Interesting philosophy on consistency in one's Extra-Curriculars activities and honors"},
+            {"time": 4125, "label": "Getting a recommendation letter to boost your application"},
+            {"time": 4550, "label": "Rachel's THREE TOP pieces of advice to make your Amherst application stand out"}
+        ]
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "id": 0,
+        "name": "Amherst College",
+        "type": "col",
+        "country": "USA",
+        "latitude": 42.371105,
+        "longitude": -72.517269,
+        "website": "https://www.amherst.edu/",
+        "description": "We search for exceptional students from across the country and around the world, including from places and populations that are historically underrepresented in higher education. Our financial aid policies are among the most generous in the nation."
+    },
+    {
+        "id": 1,
+        "name": "Vanderbilt University",
+        "type": "uni",
+        "country": "USA",
+        "latitude": 36.144761,
+        "longitude": -86.802862,
+        "website": "https://www.vanderbilt.edu/",
+        "description": "Vanderbilt University is globally renowned for its transformative education and research. Top-ranked in both academics and financial aid, Vanderbilt offers an immersive residential undergraduate experience, with programs in the liberal arts and sciences, engineering, music, education and human development."
+    },
+    {
+        "id": 2,
+        "name": "KAIST",
+        "type": "uni",
+        "country": "Korea",
+        "latitude": 36.372119,
+        "longitude": 127.36017,
+        "website": "https://www.kaist.ac.kr/en/",
+        "description": "KAIST educates, researches, and takes the lead in innovations to serve the happiness and prosperity of humanity. KAIST fosters talents who exhibit creativity, embrace challenges, and possess caring minds in creating knowledge and translating it into transformative innovation."
+    },
+    {
+        "id": 3,
+        "name": "Northwestern University",
+        "type": "uni",
+        "country": "Qatar",
+        "latitude": 25.3177629,
+        "longitude": 51.4454014,
+        "website": "https://www.qatar.northwestern.edu/academics/index.html",
+        "description": "Our campus in Qatar is educating the next generation of journalists and media professionals. Northwestern Qatar offers academic programs in journalism, media, and communication. As part of Northwestern University, one of the world’s premier research universities, we encourage the pursuit of knowledge across disciplines."
+    },
+    {
+        "id": 4,
+        "name": "Georgetown University",
+        "type": "col",
+        "country": "Qatar",
+        "latitude": 25.3179861,
+        "longitude": 51.4436817,
+        "website": "https://www.qatar.georgetown.edu/",
+        "description": "With majors in Culture and Politics, International Economics, International History, or International Politics, Georgetown’s holistic liberal arts education engages students in discovering critical and innovative solutions to some of the world’s most challenging problems alongside a passionate learning community of students, faculty and university leaders. "
+    },
+    {
+        "id": 5,
+        "name": "Carnegie Mellon University",
+        "type": "col",
+        "country": "Qatar",
+        "latitude": 25.3159401,
+        "longitude": 51.4390245,
+        "website": "https://www.qatar.cmu.edu/",
+        "description": "Our mission is to create a transformative educational experience for students focused on deep disciplinary knowledge, problem solving, leadership, communication and interpersonal skills and personal health and well-being; to cultivate a transformative university community committed to attracting and retaining diverse, world-class talent creating a collaborative environment open to the free exchange of ideas, where research, creativity, innovation, and entrepreneurship can flourish."
+    }
+]

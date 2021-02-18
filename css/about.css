@@ -1,0 +1,195 @@
+h2 {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    font-size: 2rem;
+    position: relative;
+    padding: 1.5rem;
+    width: fit-chunk;
+    margin: 0 auto 2.5rem;
+}
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12rem;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+}
+
+section + section {margin-top: 5rem;}
+
+.chunk,
+.chunk--reverse {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* column-gap: 8rem;
+    column-gap: clamp(4rem, calc(11vw - 2.8rem), 8rem);
+    row-gap: 1.5rem;
+    padding: 32px; */
+    overflow-x: hidden;
+
+    --content-order: 1;
+    --fig-order: 3;
+    --align: right;
+    --hidden-translation: 50px;
+}
+.chunk--reverse {
+    --content-order: 3;
+    --fig-order: 1;
+    --align: left;
+    --hidden-translation: -50px;
+    flex-wrap: wrap-reverse;
+}
+.chunk + .chunk,
+.chunk--reverse + .chunk,
+.chunk + .chunk--reverse,
+.chunk--reverse + .chunk--reverse {
+    margin-top: 4rem;
+}
+
+.chunk__content {
+    order: var(--content-order);
+    text-align: var(--align);
+    transform: translateX(calc( 0px - var(--hidden-translation)));
+}
+.chunk__fig {
+    order: var(--fig-order);
+    max-width: 100%;
+    user-select: none;
+    transform: translateX(var(--hidden-translation));
+}
+.chunk__fig, .chunk__content {
+    flex: .1 1 50ch;
+    opacity: 0;
+    transition: transform .5s ease-out, opacity .5s ease-in;
+    /* No gap */
+    margin: .725rem clamp(2rem, calc(11vw - 2.8rem), 4rem);
+}
+.chunk__fig > img, .chunk__fig > svg {
+    max-height: 30ch;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.chunk.appear .chunk__content,
+.chunk.appear .chunk__fig,
+.chunk--reverse.appear .chunk__content,
+.chunk--reverse.appear .chunk__fig {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.chunk__title {
+    font-size: 1.4rem;
+    margin-bottom: .3rem;
+    color: var(--blue);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 48px; */
+    padding: 0 32px;
+}
+.card {margin: 24px;}
+
+.card {
+    flex-basis: calc(33% - 32px);
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 40ch;
+    min-width: 35ch;
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+    --border-radius: 20px;
+    border-radius: var(--border-radius);
+    background-color: white;
+    overflow: hidden;
+}
+.card__img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 10px rgba(0,0,0,.15);
+}
+.card__name {
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+.card__name[data-role]::after {
+    content:  '\00000a' attr(data-role);
+    white-space: pre;
+    font-weight: 500;
+    color: var(--yellow);
+    filter: brightness(90%);
+}
+.card__square-img {
+    width: 100%;
+    padding-bottom: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 101%;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 10px rgba(0,0,0,.15);
+    position: relative;
+    transition: all .6s ease;
+}
+.card:hover > .card__square-img {
+    background-size: 120%;
+}
+.card__square-img > .overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    border-radius: var(--border-radius);
+    background-color: rgba(0,0,0,.6);
+    color: white;
+
+    opacity: 0;
+    transform: perspective(80rem) rotateY(180deg) scale(.5);
+    transform-style: preserve-3d;
+    transition: transform .6s ease, opacity .6s ease-out;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1.5rem; */
+}
+.card__square-img > .overlay > p + .member-links {margin-top: 1.5rem;}
+
+.card:hover > .card__square-img > .overlay  {
+    transform: perspective(80rem) rotateY(0deg) scale(1);
+    opacity: 1;
+}
+.member-links {
+    display: flex;
+    justify-content: center;
+    /* gap: 16px; */
+}
+.member-links > a + a {margin-left: 16px;}
+
+.member-links > a {
+    outline: none;
+    display: block;
+    height: min-content;
+    color: white;
+    transition: color .3s ease;
+}
+.member-links > a:hover {
+    color: var(--yellow);
+    filter: brightness(110%);
+}
+.member-links svg {width: 2rem;}

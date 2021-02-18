@@ -4,8 +4,276 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About LearnX</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <meta name="author" content="Federico Guglielmi">
 </head>
 <body>
-    work in progress
+    <header class="common-header">
+        <h1 class="striped-title">About LearnX</h1>
+        <p>Discover the ever-evolving LearnX global network project and its team behind</p>
+    </header>
+    <nav class="navaside">
+        <button class="navaside__button">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </button>
+        <ul class="navaside__links">
+            <li>
+                <a href="index.html" aria-label="homepage">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <path fill="currentColor" d="M 15 2 A 1 1 0 0 0 14.300781 2.2851562 L 3.3925781 11.207031 A 1 1 0 0 0 3.3554688 11.236328 L 3.3183594 11.267578 L 3.3183594 11.269531 A 1 1 0 0 0 3 12 A 1 1 0 0 0 4 13 L 5 13 L 5 24 C 5 25.105 5.895 26 7 26 L 23 26 C 24.105 26 25 25.105 25 24 L 25 13 L 26 13 A 1 1 0 0 0 27 12 A 1 1 0 0 0 26.681641 11.267578 L 26.666016 11.255859 A 1 1 0 0 0 26.597656 11.199219 L 25 9.8925781 L 25 6 C 25 5.448 24.552 5 24 5 L 23 5 C 22.448 5 22 5.448 22 6 L 22 7.4394531 L 15.677734 2.2675781 A 1 1 0 0 0 15 2 z M 18 15 L 22 15 L 22 23 L 18 23 L 18 15 z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="universities.html" aria-label="universities">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <path fill="currentColor" d="M 15.041016 3 A 1.0001 1.0001 0 0 0 14.486328 3.1425781 L 9.4863281 6.1425781 A 1.0001 1.0001 0 0 0 10 8.015625 L 10 26 L 12 26 L 12 23 C 12 22.448 12.448 22 13 22 L 17 22 C 17.552 22 18 22.448 18 23 L 18 26 L 20 26 L 20 8.015625 A 1.0001 1.0001 0 0 0 20.513672 6.1425781 L 15.513672 3.1425781 A 1.0001 1.0001 0 0 0 15.041016 3 z M 15 7 C 16.105 7 17 7.895 17 9 C 17 10.105 16.105 11 15 11 C 13.895 11 13 10.105 13 9 C 13 7.895 13.895 7 15 7 z M 3 11 C 2.448 11 2 11.448 2 12 C 2 12.552 2.448 13 3 13 L 3 26 L 8 26 L 8 24 L 6 24 L 6 22 L 8 22 L 8 20 L 6 20 L 6 18 L 8 18 L 8 16 L 6 16 L 6 14 L 8 14 L 8 12 L 8 11 L 3 11 z M 22 11 L 22 13 L 22 14 L 24 14 L 24 16 L 22 16 L 22 18 L 24 18 L 24 20 L 22 20 L 22 22 L 24 22 L 24 24 L 22 24 L 22 26 L 27 26 L 27 13 C 27.552 13 28 12.552 28 12 C 28 11.448 27.552 11 27 11 L 22 11 z M 12 14 L 14 14 L 14 16 L 12 16 L 12 14 z M 16 14 L 18 14 L 18 16 L 16 16 L 16 14 z M 12 18 L 14 18 L 14 20 L 12 20 L 12 18 z M 16 18 L 18 18 L 18 20 L 16 20 L 16 18 z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="divisor"></li>
+            <li>
+                <a href="#project" aria-label="project">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M 6 2 C 4.897 2 4 2.897 4 4 L 4 20 C 4 21.103 4.897 22 6 22 L 12.072266 22 L 14.072266 20 L 6 20 L 6 4 L 13 4 L 13 9 L 18 9 L 18 16.072266 L 20 14.072266 L 20 8 L 14 2 L 6 2 z M 15.292969 11.292969 L 12 14.585938 L 10 12.585938 L 7.2929688 15.292969 L 8.7070312 16.707031 L 10 15.414062 L 12 17.414062 L 16.707031 12.707031 L 15.292969 11.292969 z M 22.207031 15 C 22.079156 15 21.951016 15.048984 21.853516 15.146484 L 20.853516 16.146484 L 22.853516 18.146484 L 23.853516 17.146484 C 24.048516 16.951484 24.048516 16.634453 23.853516 16.439453 L 22.560547 15.146484 C 22.462547 15.048984 22.334906 15 22.207031 15 z M 20.146484 16.853516 L 15 22 L 15 24 L 17 24 L 22.146484 18.853516 L 20.146484 16.853516 z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#team" aria-label="team">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M 8 5 A 3 3 0 0 0 5 8 A 3 3 0 0 0 8 11 A 3 3 0 0 0 11 8 A 3 3 0 0 0 8 5 z M 16 5 A 3 3 0 0 0 13 8 A 3 3 0 0 0 16 11 A 3 3 0 0 0 19 8 A 3 3 0 0 0 16 5 z M 3.7636719 9.0019531 C 3.3255313 9.0187812 2.3722031 9.1317031 1.7519531 9.7519531 C 0.92495313 10.578953 1.0019531 11.998047 1.0019531 11.998047 C 1.0019531 11.998047 2.4210469 12.075047 3.2480469 11.248047 C 4.0750469 10.421047 3.9980469 9.0019531 3.9980469 9.0019531 C 3.9980469 9.0019531 3.9097188 8.9963437 3.7636719 9.0019531 z M 8 13 C 5 13 1 14.464 1 16.5 L 1 19 L 15 19 L 15 16.5 C 15 14.464 11 13 8 13 z M 16 13 C 15.683 13 15.353484 13.019781 15.021484 13.050781 C 16.203484 13.915781 17 15.059 17 16.5 L 17 19 L 23 19 L 23 16.5 C 23 14.464 19 13 16 13 z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#socials" aria-label="social media">
+                    <svg viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="project">
+            <h2>Discover the Project</h2>
+            <article class="chunk">
+                <div class="chunk__content">
+                    <h3 class="chunk__title">Lorem</h3>
+                    <p class="chunk__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum impedit voluptate sed quia necessitatibus. Quam, sunt consequuntur? Maiores quasi veniam eaque commodi maxime quia. Facilis ipsam modi tempore amet alias.</p>
+                </div>
+                <div class="chunk__fig">
+                    <img src="https://unsplash.it/800/450" alt="Placeholder">
+                </div>
+            </article>
+            <article class="chunk--reverse">
+                <div class="chunk__content">
+                    <h3 class="chunk__title">Lorem</h3>
+                    <p class="chunk__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum impedit voluptate sed quia necessitatibus. Quam, sunt consequuntur? Maiores quasi veniam eaque commodi maxime quia. Facilis ipsam modi tempore amet alias.</p>
+                </div>
+                <div class="chunk__fig">
+                    <img src="https://unsplash.it/850/450" alt="Placeholder">
+                </div>
+            </article>
+            <article class="chunk">
+                <div class="chunk__content">
+                    <h3 class="chunk__title">Lorem</h3>
+                    <p class="chunk__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum impedit voluptate sed quia necessitatibus. Quam, sunt consequuntur? Maiores quasi veniam eaque commodi maxime quia. Facilis ipsam modi tempore amet alias.</p>
+                </div>
+                <div class="chunk__fig">
+                    <img src="https://unsplash.it/600/350" alt="Placeholder">
+                </div>
+            </article>
+            <article class="chunk--reverse">
+                <div class="chunk__content">
+                    <h3 class="chunk__title">Lorem</h3>
+                    <p class="chunk__p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum impedit voluptate sed quia necessitatibus. Quam, sunt consequuntur? Maiores quasi veniam eaque commodi maxime quia. Facilis ipsam modi tempore amet alias.</p>
+                </div>
+                <div class="chunk__fig">
+                    <img src="https://unsplash.it/550/450" alt="Placeholder">
+                </div>
+            </article>
+        </section>
+        <section id="team">
+            <h2>Meet our Team</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card__square-img" id="beka-img">
+                        <div class="overlay">
+                            <p>I made this and that</p>
+                            <div class="member-links">
+                                <a href="https://t.me/bekal1str" target="_blank" rel="noopener" aria-label="Contact me on telegram">
+                                    <svg viewBox="0 8 496 504"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></svg>
+                                </a>
+                                <a href="https://it.linkedin.com/in/begali-aslonov-a36a2118a" target="_blank" rel="noopener" aria-label="Linkedin account">
+                                    <svg viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="card__name" data-role="Founder">Begali Aslonov</h3>
+                </div>
+                <div class="card">
+                    <div class="card__square-img" id="yoku-img">
+                        <div class="overlay">
+                            <p>I made this and that</p>
+                            <div class="member-links">
+                                <a href="https://www.linkedin.com/in/yokubjon-abralov-2010b719a/" target="_blank" rel="noopener" aria-label="Linkedin account">
+                                    <svg viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="card__name" data-role="Co-founder">Yokubjon Abralov</h3>
+                </div>
+                <div class="card">
+                    <div class="card__square-img" id="zayn-img">
+                        <div class="overlay">
+                            <p>I made this and that</p>
+                            <div class="member-links">
+                                <a href="https://www.facebook.com/zaynab.atabayeva" aria-label="Facebook account">
+                                    <svg viewBox="0 0 512 512"><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+                                </a>
+                                <a href="http://www.linkedin.com/in/zaynab-atabaeva-8a88a11a6" target="_blank" rel="noopener" aria-label="Linkedin account">
+                                    <svg viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="card__name" data-role="Content creator">Zaynab Atabaeva</h3>
+                </div>
+                <div class="card">
+                    <div class="card__square-img" id="fede-img">
+                        <div class="overlay">
+                            <p>I made this and that</p>
+                            <div class="member-links">
+                                <a href="https://t.me/Fedesky25" target="_blank" rel="noopener" aria-label="Contact me on telegram">
+                                    <svg viewBox="0 0 496 496"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></svg>
+                                </a>
+                                <a href="https://github.com/Fedesky25" target="_blank" rel="noopener" aria-label="Github account">
+                                    <svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="card__name" data-role="Frontend developer">Federico Guglielmi</h3>
+                </div>
+                <div class="card">
+                    <div class="card__square-img" id="zufa-img">
+                        <div class="overlay">
+                            <p>I made this and that</p>
+                            <div class="member-links">
+                                <a href="https://t.me/zaynutdinovz" target="_blank" rel="noopener" aria-label="Contact me on telegram">
+                                    <svg viewBox="0 0 496 496"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></svg>
+                                </a>
+                                <a href="https://github.com/Zaynutdinov-Zufarbek" target="_blank" rel="noopener" aria-label="Github account">
+                                    <svg viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/zufarbek-zaynutdinov-144aa91a2/" target="_blank" rel="noopener" aria-label="Linkedin account">
+                                    <svg viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="card__name" data-role="Frontend developer">Zufarbek Zaynutdinov</h3>
+                </div>
+                <div class="card">
+                    <div class="card__square-img" id="mokh-img">
+                        <div class="overlay">
+                            <p>I made this and that</p>
+                            <div class="member-links">
+                                <a href="https://www.linkedin.com/in/mokhinbonu-anvarova-6ba482202/" target="_blank" rel="noopener" aria-label="Linkedin account">
+                                    <svg viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="card__name" data-role="Content creator">Mokhinbonu Anvarova</h3>
+                </div>
+                <div class="card">
+                    <div class="card__square-img" id="ian-img">
+                        <div class="overlay">
+                            <p>I made this and that</p>
+                            <div class="member-links">
+                                <a href="https://t.me/zaynutdinovz" target="_blank" rel="noopener" aria-label="Contact me on telegram">
+                                    <svg viewBox="0 0 496 496"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ian-d%C5%BEindo-980147161/" target="_blank" rel="noopener" aria-label="Linkedin account">
+                                    <svg viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="card__name" >Ian Dzindo</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <img class="brand" src="./img/logo.png" alt="LearnX Logo">
+    <div class="water">LearnX</div>
+    <footer>
+        <h2>Follow us on social media</h2>
+        <ul class="socials" id="socials">
+            <li>
+                <a href="https://t.me/LearnX_Global_Network" target="_blank" rel="noopener" aria-label="See our telegram channel">
+                    <svg viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/learnx_global_network/" target="_blank" rel="noopener" aria-label="Go to our instagram profile">
+                    <svg viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UC8Lsu02jR5bR8ubbUlC5qEQ" target="_blank" rel="noopener" aria-label="See our youtube channel">
+                    <svg viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/learnx-online/" target="_blank" rel="noopener" aria-label="See our linkedin company account">
+                    <svg viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                </a>
+            </li>
+        </ul>
+        LearnX Global Network&trade; 2020-2021
+    </footer>
+    <script src="./js/common.js"></script>
+    <script>
+        initWaterMark(100);
+        setAnchors(30);
+        const togNav = initNavToggle(document.querySelectorAll('header, main, footer'));
+
+        const chunckDisappear = new IntersectionObserver(entries=>{
+            entries.forEach(entry=>{
+                if(!entry.isIntersecting) {
+                    entry.target.classList.remove('appear');
+                    chunckDisappear.unobserve(entry.target);
+                    chunckObs.observe(entry.target);
+                }
+            })
+        }, {rootMargin: "50px 0px 50px 0px"});
+        const chunckObs = new IntersectionObserver(entries=>{
+            entries.forEach(entry=>{
+                if(entry.isIntersecting) entry.target.classList.add('appear');
+                else chunckDisappear.observe(entry.target);
+            })
+        }, {rootMargin: "-170px 0px -170px 0px"});
+        document.querySelectorAll('.chunk, .chunk--reverse').forEach(el=>chunckObs.observe(el));
+
+        document.onreadystatechange = () => {
+            if(document.readyState === "complete"){
+                document.getElementById('beka-img').style.backgroundImage = "url('./img/team/BegaliAslonov.jpg')";
+                document.getElementById('yoku-img').style.backgroundImage = "url('./img/team/YokubjonAbralov.jpg')";
+                document.getElementById('fede-img').style.backgroundImage = "url('./img/team/FedericoGuglielmi.jpg')";
+                document.getElementById('zufa-img').style.backgroundImage = "url('./img/team/ZufarbekZaynutdinov.jpg')";
+                document.getElementById('ian-img').style.backgroundImage = "url('./img/team/IanDzindo.jpg')";
+                document.getElementById('zayn-img').style.backgroundImage = "url('./img/team/ZaynabAtabaeva.jpg')";
+                document.getElementById('mokh-img').style.backgroundImage = "url('./img/team/MokhinbonuAnvarova.jpg')";
+            }
+        }
+
+    </script>
 </body>
 </html>

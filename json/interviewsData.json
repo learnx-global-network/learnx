@@ -1,0 +1,36 @@
+[
+    {
+        "istitute": "Carnegie Mellon University in Qatar",
+        "studentName": "Aigerim",
+        "description": "Aigerim explains the difference between Computer Science (CS) and Information Systems (IS) academic majors at Carnegie Mellon University in Qatar. Aigerim sheds light on what are the key characteristics of your CMU-Q Supplemental Essay.",
+        "videoID": "GUT9CU6Oa9Y",
+        "timestamps": [
+            {"time": 110, "label": "High school experience"},
+            {"time": 306, "label": "Why did you apply to IS?"},
+            {"time": 505, "label": "Project orientation"},
+            {"time": 866, "label": "Bussiness and CS merging"},
+            {"time": 1064, "label": "Qatar culture"}
+        ]
+    },
+    {
+        "istitute": "Northwestern University in Qatar",
+        "studentName": "Muhammadjon",
+        "description": "This is our interview with Muhammadjon, a student from Uzbekistan. Join us to find out a detailed story of applying for Northwestern University in Qatar.",
+        "videoID": "4yEQs37nKOU",
+        "timestamps": [
+            {"time": 67, "label": "Reasons of your choice"},
+            {"time": 158, "label": "Majors offered"},
+            {"time": 300, "label": "Optional major choice when applying"},
+            {"time": 471, "label": "Financial scholarships offered"},
+            {"time": 655, "label": "List of companies"},
+            {"time": 774, "label": "Scholarship details"}
+        ]
+    },
+    {
+        "istitute": "KAIST",
+        "studentName": "Maida",
+        "description": "This is our interview with Maida, a student from Saudi Arabia. Join us to find out a detailed story of applying for KAIST, Korea.",
+        "videoID": "2MQfId-S2-I",
+        "timestamps": []
+    }
+]

@@ -3,15 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Federico Guglielmi">
     <title>LearnX Inteviews</title>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/interviews.css">
 </head>
 <body>
-    <header>
+    <script>if(!window.location.hash.startsWith('#i-'))window.location.replace('./universities.html');</script>
+    <header class="common-header">
         <h1 class="striped-title">LearnX podcasts</h1>
-        <p>Here's the full list of our interviews with highlighted all the timestamps to useful information.</p>
+        <p>Here's the full list of our interviews with highlighted all the timestamps to useful information. See the <a href="./alt_interviews.html">alternative layout</a></p>
     </header>
+    <nav class="navaside">
+        <button class="navaside__button">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </button>
+        <ul class="navaside__links">
+            <li>
+                <a href="./index.html" aria-label="homepage">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <path fill="currentColor" d="M 15 2 A 1 1 0 0 0 14.300781 2.2851562 L 3.3925781 11.207031 A 1 1 0 0 0 3.3554688 11.236328 L 3.3183594 11.267578 L 3.3183594 11.269531 A 1 1 0 0 0 3 12 A 1 1 0 0 0 4 13 L 5 13 L 5 24 C 5 25.105 5.895 26 7 26 L 23 26 C 24.105 26 25 25.105 25 24 L 25 13 L 26 13 A 1 1 0 0 0 27 12 A 1 1 0 0 0 26.681641 11.267578 L 26.666016 11.255859 A 1 1 0 0 0 26.597656 11.199219 L 25 9.8925781 L 25 6 C 25 5.448 24.552 5 24 5 L 23 5 C 22.448 5 22 5.448 22 6 L 22 7.4394531 L 15.677734 2.2675781 A 1 1 0 0 0 15 2 z M 18 15 L 22 15 L 22 23 L 18 23 L 18 15 z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="./universities.html" aria-label="universities">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                        <path fill="currentColor" d="M 15.041016 3 A 1.0001 1.0001 0 0 0 14.486328 3.1425781 L 9.4863281 6.1425781 A 1.0001 1.0001 0 0 0 10 8.015625 L 10 26 L 12 26 L 12 23 C 12 22.448 12.448 22 13 22 L 17 22 C 17.552 22 18 22.448 18 23 L 18 26 L 20 26 L 20 8.015625 A 1.0001 1.0001 0 0 0 20.513672 6.1425781 L 15.513672 3.1425781 A 1.0001 1.0001 0 0 0 15.041016 3 z M 15 7 C 16.105 7 17 7.895 17 9 C 17 10.105 16.105 11 15 11 C 13.895 11 13 10.105 13 9 C 13 7.895 13.895 7 15 7 z M 3 11 C 2.448 11 2 11.448 2 12 C 2 12.552 2.448 13 3 13 L 3 26 L 8 26 L 8 24 L 6 24 L 6 22 L 8 22 L 8 20 L 6 20 L 6 18 L 8 18 L 8 16 L 6 16 L 6 14 L 8 14 L 8 12 L 8 11 L 3 11 z M 22 11 L 22 13 L 22 14 L 24 14 L 24 16 L 22 16 L 22 18 L 24 18 L 24 20 L 22 20 L 22 22 L 24 22 L 24 24 L 22 24 L 22 26 L 27 26 L 27 13 C 27.552 13 28 12.552 28 12 C 28 11.448 27.552 11 27 11 L 22 11 z M 12 14 L 14 14 L 14 16 L 12 16 L 12 14 z M 16 14 L 18 14 L 18 16 L 16 16 L 16 14 z M 12 18 L 14 18 L 14 20 L 12 20 L 12 18 z M 16 18 L 18 18 L 18 20 L 16 20 L 16 18 z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="./about.html" aria-label="about us">
+                    <svg viewBox="0 0 48 48">
+                        <path fill="currentColor" d="M24,4C12.972,4,4,12.972,4,24s8.972,20,20,20s20-8.972,20-20S35.028,4,24,4z M25.5,33.5c0,0.828-0.672,1.5-1.5,1.5	s-1.5-0.672-1.5-1.5v-11c0-0.828,0.672-1.5,1.5-1.5s1.5,0.672,1.5,1.5V33.5z M24,18c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2	s2,0.895,2,2C26,17.105,25.105,18,24,18z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="divisor"></li>
+            <li>
+                <a href="#socials" aria-label="social media">
+                    <svg viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
     <main id="mainBody">
         <!--article class="podcast PROTOTYPE">
             <div class="podcast__content">
@@ -41,34 +79,34 @@
         </article-->
     </main>
     <img class="brand" src="./img/logo.png" alt="LearnX Logo">
-    <div class="water">LearnX</div>
+    <div class="water" role="figure">LearnX</div>
     <footer>
         <h2>Follow us on social media</h2>
         <ul class="socials" id="socials">
             <li>
-                <a href="https://t.me/LearnX_Global_Network" aria-label="See our telegram channel">
+                <a href="https://t.me/LearnX_Global_Network" target="_blank" rel="noopener" aria-label="See our telegram channel">
                     <svg viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></svg>
                 </a>
             </li>
             <li>
-                <a href="https://www.instagram.com/learnx_global_network/" aria-label="Go to our instagram profile">
+                <a href="https://www.instagram.com/learnx_global_network/" target="_blank" rel="noopener" aria-label="Go to our instagram profile">
                     <svg viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
                 </a>
             </li>
             <li>
-                <a href="https://www.youtube.com/channel/UC8Lsu02jR5bR8ubbUlC5qEQ" aria-label="See our youtube channel">
+                <a href="https://www.youtube.com/channel/UC8Lsu02jR5bR8ubbUlC5qEQ" target="_blank" rel="noopener" aria-label="See our youtube channel">
                     <svg viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/company/learnx-online/" aria-label="See our linkedin company account">
+                <a href="https://www.linkedin.com/company/learnx-online/" target="_blank" rel="noopener" aria-label="See our linkedin company account">
                     <svg viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
                 </a>
             </li>
         </ul>
         LearnX Global Network&trade; 2020-2021
     </footer>
-
+    <script src="./js/common.js"></script>
     <script src="./js/interviews.js"></script>
 </body>
 </html>

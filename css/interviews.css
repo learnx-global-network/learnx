@@ -1,19 +1,15 @@
 body {min-height: 120vh;}
-header {
-    margin-bottom: 3rem;
-    padding: 2.5rem 1rem;
-    text-align: center;
-}
-header p {
-    max-width: 50ch;
-    margin: 3rem auto 0;
-}
 .podcast,
 .podcast--reverse {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+@media screen and (min-width: 1400px) {
+    /* .podcast,.podcast--reverse {gap: clamp(0rem, calc(15vw - 210px), 4rem);} */
+    .podcast > .podcast__content + .podcast__video {margin-left: clamp(0rem, calc(15vw - 210px), 4rem);}
+    .podcast--reverse > .podcast__content + .podcast__video {margin-right: clamp(0rem, calc(15vw - 210px), 4rem);}
 }
 .podcast + .podcast, .podcast--reverse + .podcast--reverse,
 .podcast + .podcast--reverse, .podcast--reverse + .podcast {margin-top: 5rem;}
@@ -36,15 +32,15 @@ header p {
 .podcast__title::before {
     content: '';
     position: absolute;
-    top: .25em;
+    top: .15em;
     bottom: .15em;
-    left: -.4em;
+    left: -.35em;
     width: .2em;
     background-color: var(--yellow);
 }
 .podcast__subtitle {
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     color: #888;
 }
 .podcast__desc {
@@ -60,10 +56,9 @@ header p {
     border: 0;
     background: unset;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     font-family: "Merriweather", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     cursor: pointer;
-    color: var(--blue);
     text-align: left;
     white-space: normal;
     word-wrap: normal;
